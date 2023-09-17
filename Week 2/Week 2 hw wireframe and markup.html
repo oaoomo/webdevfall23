@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Semantic Markup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Starter template for using semantic HTML elements to organize our code before we begin CSS layouts next week."
+    />
+    <meta name="keywords" content="HTML, Semantic HTML, Tutorial" />
+    <meta name="author" content="NYU" />
+    <style type="text/css">
+      /*Tag or Element Selector*/
+      h1 {
+        font-family: 'Verdana', sans-serif;
+      }
+
+      /*Class Selector*/
+      .profile-photo {
+        border: 1px solid rgb(8, 15, 6);
+        width: 200px;
+        height: 200px;
+      }
+
+      /*Id Selector*/
+      #info {
+        margin: 0 auto;
+        text-align: left;
+        background-color: rgba(100, 100, 100, 0.5);
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- Here is some starter content. We will mark this up to contain a header, nav, article, section, aside, footer and more! Bonus points if you use even more semantic HTML elements in your HW this week. -->
+    <!-- We will be marking this up as our main menu -->
+    <header>
+      <h1>Recipe Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Recipes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <nav>
+        <ul>
+          <li><a href="#">Ingredients</a></li>
+          <li><a href="#">Occasions</a></li>
+          <li><a href="#">Cuisines</a></li>
+          <li>
+            <a href="#">Middle Eastern</a>
+            <ul>
+              <li><a href="#" target="_self">Sambousa</a></li>
+              <li><a href="#">Machbous</a></li>
+              <li><a href="#">Koushery</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <!-- individual image with a caption using figure and figcaption -->
+
+      <figure>
+        <img src="https://placehold.co/300x300" class="profile-photo" />
+        <figcaption>
+            <br />
+            <article>
+         <h2><em>Sambousa</em></h2> 
+          <br />
+            <body> 
+              an easy recipe for delicious crispy beef Sambousa! 
+            </body>
+        </article>
+          <br />
+          <br />
+          <section>
+            
+            <strong>Ingredients</strong>
+          
+            </section>
+          
+          
+          <br />
+          <body>
+            <ul>
+                <li> 12 uncooked tortillas </li>
+                <li> 1/2 pound ground beef  </li>
+                <li> 1 tbsp of oil </li>
+                <li>1 small onion finely chopped</li>
+                <li>salt and pepper to taste</li>
+                <li>1 tbsp of tomato paste</li>
+                <li>3 tbsp of chopped fresh parsley</li>
+                <li>for the sealant use 2 tbsp of flour and 2 1/2 tbsp of water</li>   
+            </ul>
+          </body>
+
+          <br />
+          <section> 
+             <strong>Instructions</strong> 
+            </section>
+        
+          <body>
+            <ol>
+                <li>In a skillet heat oil then sauté onion until fragrant then add ground beef and break to brown well.</li>
+                <li> Add tomato paste, spices and parsley, mixing everything well to combine.</li>
+                <li> Set aside.</li>
+                <li>Make your sealant mixture by combining flour and water into a paste.</li>
+                <li>Cut tortillas into two equal parts and roll each piece into a cone shape, pressing the edges to seal.</li>
+                <li>Stuff 2 tbsp of filling into each cone.</li>
+                <li>Seal the opening of the cone using the flour paste then press the edges down.</li>
+                <li>Fry in 1-2 inches of oil until golden brown on each side.</li>
+            </ol>
+          </body>
+          <br />
+          <br />
+         
+        </figcaption>
+      </figure>
+      
+    </main>
+
+    <footer>
+      © Recipe website 2023 <a href="#" target="_blank">facebook</a>
+      <a href="#">twitter</a>
+    </footer>
+  </body>
+</html>
