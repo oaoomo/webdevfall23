@@ -11,11 +11,6 @@
 - getting familiar with your tools/what you like to use
 - knowing your audience and how to best build your wireframe to communicate with them
     
-## Part three
-![Alt text](img/wireframe.jpg "Site Map")
-
-
-
 
     
 
