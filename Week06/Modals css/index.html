@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Modal Windows </title>
+<style type = "text/css">
+.infoModal {
+    /* stretch to cover entire screen */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+/*  transparent grey bg */
+background-color: rgba(0,0,0, 0.3);
+/* make sure it pops up over all conent */
+z-index: 99999;
+/* starting state is of 0% opacity for our transition */
+
+opacity: 0;
+
+/* we always define a transition on the starting state */
+
+transition: opacity 400ms ease-in;
+/* disables all mouse events */
+pointer-events: none;
+}
+.infoModal:target{
+    opacity: 1;
+    /* re-allow pointer events */
+    pointer-events: auto;
+
+}
+/* look for something with aclass of infomodal 
+and find a div that is a direct descendant and style that*/
+.infoModal > div{
+width: 300px;
+height: 300px;
+position: relative;
+margin: 10% auto;
+padding: 2rem;
+background-color: white;
+}
+.close{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 1s ease;
+    line-height: 20px;
+
+}
+.close:hover{
+    background-color: black;
+    color:white;
+
+}
+a.button {
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+</style>
+<head>
+    <body>
+        <a href="#info">link to modal 1</a>
+        <a href="#info2">link to modal 2</a>
+
+        <div id="info" class="infoModal">
+        <div>
+        <a href="#close" title="close" class="close">X</a>
+        <h2> Title of Modal 1</h2>
+        <p>look at me! first modal!</p>
+        </div>
+        </div>
+
+        <div id="info2" class="infoModal">
+            <div>
+            <a href="#close" title="close" class="close">X</a>
+            <h2> Title of Modal 2</h2>
+            <p>look at me! second modal!</p>
+            </div>
+            </div>
+    </body>
+</head>

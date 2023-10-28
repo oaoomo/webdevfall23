@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abrar's projects</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleMenu (){
+        const el = document.getElementById ('menu')
+        el.classList.toggle ('open')
+      }
+    </script>
+  </head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <h1 class="brand"><a href="index.html"><img src="./img/logo.png" alt="logo"/> </a></h1>
+        <!-- this is the menu icon hidden by default 
+          on desktop and tablet sizes but shown on mobile
+        spans display inline by default -->
+        <span class="mobile-menu" onclick="toggleMenu()">
+          <!-- case sensitive use all lower case -->
+          <span class="material-icons">menu</span>
+        </span>
+        <!-- main nav is always an unordered list of links -->
+        <nav>
+          <!-- menu class for styling, menu ID for javascript -->
+          <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+    		<li><a href="about.html">About</a></li>
+    		<li><a href="projects.html">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="header-photo"> 
+      <h1> 
+        <img src="./img/projects.png" class="header-photo"> 
+       </h1> 
+    </div>
+       <h3> Designs </h3> 
+
+    <div class="container">
+        <div class="thumb">
+            <img src="./img/1.jpg" alt="some project">
+            <article class="mask">
+                <h2>Bike repair shop design</h2>
+                <p>Visual foundation studio</p>
+                <a class="info" href="#">learn more</a>
+            </article>
+        </div>
+
+        <div class="thumb">
+            <img src="./img/2.jpg" alt="some project">
+            <article class="mask">
+                <h2>BRS design 2</h2>
+                <p>VFS</p>
+                <a class="info" href="#">learn more</a>
+            </article>
+        </div>
+
+        <div class="thumb">
+            <img src="./img/3.jpg" alt="some project">
+            <article class="mask">
+                <h2>BRS propoganda</h2>
+                <p>VFS</p>
+                <a class="info" href="#">learn more</a>
+            </article>
+        </div>
+
+        </div>
+
+
+        
+
+    </div>
+
+    <h3> Photos </h3>
+
+
+    <div class="container">
+        <div class="thumb">
+            <img src="./img/4.jpg" alt="some project">
+            <article class="mask">
+                <h2>Narrative Photo</h2>
+                <p>SMI</p>
+                <a class="info" href="#">learn more</a>
+            </article>
+        </div>
+
+        <div class="thumb">
+            <img src="./img/5.jpg" alt="some project">
+            <article class="mask">
+                <h2>Experiment 1</h2>
+                <p>SMI</p>
+                <a class="info" href="#">learn more</a>
+            </article>
+        </div>
+
+        <div class="thumb">
+            <img src="./img/6.jpg" alt="some project">
+            <article class="mask">
+                <h2>Experiment 2</h2>
+                <p>SMI</p>
+                <a class="info" href="#">learn more</a>
+            </article>
+        </div>
+
+        
+
+    </div>
+</div>
+</body>
+<footer>
+    <img src="./img/background.png" class="footer">
+</footer>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Layouts</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleMenu (){
+        const el = document.getElementById ('menu')
+        el.classList.toggle ('open')
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 class="brand"><a href="#">logo</a></h1>
+      <!-- this is the menu icon hidden by default 
+        on desktop and tablet sizes but shown on mobile
+      spans display inline by default -->
+      <span class="mobile-menu" onclick="toggleMenu()">
+        <!-- case sensitive use all lower case -->
+        <span class="material-icons">menu</span>
+      </span>
+      <!-- main nav is always an unordered list of links -->
+      <nav>
+        <!-- menu class for styling, menu ID for javascript -->
+        <ul class="menu" id="menu">
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

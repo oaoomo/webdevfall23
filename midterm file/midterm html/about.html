@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abrar's about</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleMenu (){
+        const el = document.getElementById ('menu')
+        el.classList.toggle ('open')
+      }
+    </script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+    <!-- Place your Nav Links Here -->
+    <header>
+        <h1 class="brand"><a href="index.html"><img src="./img/logo.png" alt="logo"/> </a></h1>
+        <!-- this is the menu icon hidden by default 
+          on desktop and tablet sizes but shown on mobile
+        spans display inline by default -->
+        <span class="mobile-menu" onclick="toggleMenu()">
+          <!-- case sensitive use all lower case -->
+          <span class="material-icons">menu</span>
+        </span>
+        <!-- main nav is always an unordered list of links -->
+        <nav>
+          <!-- menu class for styling, menu ID for javascript -->
+          <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+    		<li><a href="about.html">About</a></li>
+    		<li><a href="projects.html">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="header-photo">
+    <h1>
+        <img src="./img/about.png" class="header-photo"> 
+       </h1>
+      </div>
+    <main>
+      <div class="about">
+       
+        <article>
+         <h3>Hello!</h3>
+         <section><h3>I'm Abrar, an IDM student at NYU! This website was developed for Intro to Web Dev.</h3></section>
+         <p>
+          I like old internet things like Windows 95 which I tried to make the theme of this website.
+           I also make stuff like films, photos, designs and music (the consquences of being in IDM).
+          
+         </p>
+         <p>
+          You can find some of my stuff over at the projects page!
+         </p>
+         
+        </article>
+      </div>
+     </main>
+    </div>
+</body>
+<footer>
+  <img src="./img/background.png" class="footer">
+</footer>
+</html>

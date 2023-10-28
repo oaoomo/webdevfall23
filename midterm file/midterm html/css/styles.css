@@ -1,0 +1,271 @@
+
+ *{
+    /* border box means in when i say width, that includes my borders  */
+box-sizing: border-box;
+
+}
+
+.about {
+align-items: center;
+justify-content: center;
+display: flex;
+
+}
+
+.header-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+  /* how do i center my image?? that still works when the browser is resized */
+
+
+
+body {
+font-family: Helvetica, Arial, sans-serif;
+background-color: #ffffff;
+
+
+/* how do i get my start bar to always show on the page? would it be possible to make some sort of border image? */
+margin: 0;
+
+
+/* position fixed and crop picture into just the bar footer tag with image of just the bar and position fixed bottom zero */
+
+
+}
+ img {
+    width: 100%;
+    height: auto;
+ }
+
+ a {
+    color: #333;
+ }
+
+ /* desktop first styling */
+ header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 0 2rem;
+    position: relative;
+ }
+
+ .brand{
+    margin: 0;
+    font-weight: 200;
+ }
+
+ header a{
+    color: #010000;
+    text-decoration: none;
+ }
+
+ .mobile-menu{
+    display: none;
+ }
+
+ .menu{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+ }
+ .menu li a {
+display: block;
+padding: 1rem;
+ }
+
+ .menu li a:hover {
+color: #EEE;
+background-color: rgba(0,0,0,0.3);
+ }
+
+
+/* xero out the annoying margin on the page */
+html, body{
+    margin: 0;
+}
+/* scale image to fit its parent container */
+
+
+/* Desktop First Styling */
+
+div.hero{
+    width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+
+
+}
+
+div.hero article{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 50%;
+    padding:2%;    
+background: linear-gradient(to right,  rgba(255,0,0,0.5) 0%,rgba(255,0,0,0.2) 100%); 
+
+}
+
+button, a.info{
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.thumb{
+    position: relative;
+    /* width: 30%; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:30%;
+    /* flex: 0 0 30%; */
+    overflow: hidden;
+    margin: 24px auto;
+}
+
+/* prepare initial state for images to transform */
+.thumb img{
+transform:scale(1);
+transform:rotate(0deg);
+transition: all 1s ease;
+}
+
+.thumb:hover img{
+    transform: scale(1.5) rotate(-20deg);
+}
+
+.mask{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 1s ease-in-out;
+}
+
+.mask h2 {
+    margin: 0;
+}
+.mask p{
+    font-style: italic;
+}
+.thumb:hover .mask {
+    opacity: 1;
+}
+
+.thumb .mask h2, 
+.thumb .mask p,
+.thumb .mask a{
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+
+.thumb:hover .mask h2, 
+.thumb:hover .mask p,
+.thumb:hover .mask a{
+    opacity: 1;
+    transform: scale(1);
+}
+
+ /* mobile */
+ @media only screen and (max-width: 767px) {
+body {
+    background-color: #ffffff;
+}
+
+.brand{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    top: 3rem;
+    left: 3rem;
+   
+}
+header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    padding: 0%;
+
+}
+.mobile-menu {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: block;
+    font-size: 2rem;
+    color: #000000;
+    cursor: pointer;
+}
+.menu {
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+    height: 0;
+}
+.menu.open {
+    height: auto;
+}
+.menu li {
+    border-bottom: 1px solid #ffffff;
+}
+
+    .container{
+        flex-direction: column;
+        padding: 12px;
+    }
+    .hero article {
+        width: 100%;
+        padding: 25px;
+        bottom: 0;
+    }
+
+}
+/* tablet size
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .hero article{
+        width: 75%;
+    }
+    .thumb {
+        flex-basis: 45%;
+    }
+} */
+
+
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abrar's homepage</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleMenu (){
+        const el = document.getElementById ('menu')
+        el.classList.toggle ('open')
+      }
+    </script>
+
+</head>
+<body>
+    
+    <header>
+        <h1 class="brand"> <a href="index.html"><img src="./img/logo.png" alt="logo"/> </a>   </h1>
+        <!-- this is the menu icon hidden by default 
+          on desktop and tablet sizes but shown on mobile
+        spans display inline by default -->
+        <span class="mobile-menu" onclick="toggleMenu()">
+          <!-- case sensitive use all lower case -->
+          <span class="material-icons">menu</span>
+        </span>
+        <!-- main nav is always an unordered list of links -->
+        <nav>
+          <!-- menu class for styling, menu ID for javascript -->
+          <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+    		<li><a href="about.html">About</a></li>
+    		<li><a href="projects.html">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+
+   
+<div class="header-photo">
+<h1> 
+ <img src="./img/welcome.png" class="header-photo"> 
+ <!-- change logo to higher quality image -->
+</h1>
+</div>
+<main>
+<h1> Featured projects </h1>
+<div class="container">
+    <div class="thumb">
+        <img src="./img/1.jpg" alt="some project">
+        <article class="mask">
+            <h2>Design Draft</h2>
+            <p>first draft for Visual Foundation Studio Bike repair shop assignment</p>
+            <a class="info" href="#">learn more</a>
+        </article>
+    </div>
+
+    <div class="thumb">
+        <img src="./img/2.jpg" alt="some project">
+        <article class="mask">
+            <h2>Design draft 2</h2>
+            <p> second draft for VFS bike repair shop</p>
+            <a class="info" href="#">learn more</a>
+        </article>
+    </div>
+
+    <div class="thumb">
+        <img src="./img/4.jpg" alt="some project">
+        <article class="mask">
+            <h2>Narrative photo</h2>
+            <p>Still and moving Images</p>
+            <a class="info" href="#">learn more</a>
+        </article>
+    </div>
+</div>
+</main>
+
+
+    
+</body>
+<footer>
+    <img src="./img/background.png" class="footer">
+</footer>
+
+</html>
