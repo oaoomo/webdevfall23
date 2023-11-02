@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1"/>
+        <title>Geolocation</title>
+        <script type="text/javascript"> 
+// add an event listener to make sure our html page is fully loaded
+// once it is, search for the users location
+     document.addEventlistener('DOMContentLoaded', getLocation);
+     function getLocation () {
+        // conditional to check if the users browsers support geolocation
+        if (navigator.geolocation){
+  // geolocation exists! lets now use it to get our current location
+        // pass it in to a callback function we write 
+       navigator.geolocation.getCurrentPosition(setPosition)
+        } else { 
+            alert('Your Browser does not support geolocation')
+        }
+     }
+// getCurrentPosition is returning a geoposition object 
+// and we are passing it in to a callback function called set position
+function setPosition (position){
+console.log(position.coords.)
+// 40.6933538
+// -73.9879936
+}
+        </script>
+    </head>
+</html>
